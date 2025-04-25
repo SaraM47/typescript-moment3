@@ -4,8 +4,8 @@ import { ConverterComponent } from './pages/converter/converter.component';
 import { AboutComponent } from './pages/about/about.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent},
+    { path: 'start', component: HomeComponent},
     { path: 'converter', component: ConverterComponent },
     { path: 'about', component: AboutComponent },
-    { path: "", redirectTo: "/start", pathMatch: "full"}
+    { path: "", redirectTo: "/home", pathMatch: "full"}
 ];
