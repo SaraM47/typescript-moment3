@@ -1,0 +1,16 @@
+<section class="length-converter">
+    <h2>Konvertera Längd</h2>
+  
+    <div class="converter-field">
+      <label for="meters">Meter:</label>
+      <input id="meters" type="number" [(ngModel)]="meters" (input)="convertToFeet()" />
+    </div>
+  
+    <div class="converter-field">
+      <label for="feet">Feet:</label>
+      <input id="feet" type="number" [(ngModel)]="feet" (input)="convertToMeters()" />
+    </div>
+  
+    <p>{{ meters | number:'1.2-2' }} meter = {{ feet | number:'1.2-2' }} feet</p>
+  </section>
+  

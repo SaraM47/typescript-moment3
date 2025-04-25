@@ -1,0 +1,15 @@
+.temperature-converter {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .converter-field {
+    margin: 1rem 0;
+  }
+  
+  input {
+    padding: 0.5rem;
+    width: 150px;
+    margin-left: 0.5rem;
+  }
+  

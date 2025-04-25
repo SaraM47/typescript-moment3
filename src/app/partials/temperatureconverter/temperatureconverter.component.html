@@ -1,0 +1,16 @@
+<section class="temperature-converter">
+    <h2>Konvertera Temperatur</h2>
+  
+    <div class="converter-field">
+      <label for="celsius">Celsius:</label>
+      <input id="celsius" type="number" [(ngModel)]="celsius" (input)="convertToFahrenheit()" />
+    </div>
+  
+    <div class="converter-field">
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input id="fahrenheit" type="number" [(ngModel)]="fahrenheit" (input)="convertToCelsius()" />
+    </div>
+  
+    <p>{{ celsius | number:'1.1-1' }} °C = {{ fahrenheit | number:'1.1-1' }} °F</p>
+  </section>
+  
