@@ -1,1 +1,17 @@
-<p>mainmenu works!</p>
+<div class="nav-container">
+    <button class="menu-toggle" (click)="toggleMenu()">Meny</button>
+    <nav [class.open]="menuOpen">
+      <ul>
+        <li>
+          <a routerLink="/start" routerLinkActive="active" (click)="closeMenu()">Startsidan</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">Om</a>
+        </li>
+        <li>
+          <a routerLink="/converter" routerLinkActive="active" (click)="closeMenu()">Konvertera</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
