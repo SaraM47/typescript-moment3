@@ -1,0 +1,33 @@
+.home {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .home h1 {
+    color: #1aa1bc;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 60ch;
+  }
+  
+  .start-image {
+    width: 100%;
+    max-width: 32ch;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home h1 {
+        font-size: 1.5rem;
+    }
+}
