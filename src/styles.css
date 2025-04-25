@@ -26,10 +26,21 @@ main{
 footer {
     max-width: 80ch;
     margin: 0 auto;
+    background-color: #5AD0FF;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 4rem;
 }
 
 @media screen and (max-width: 768px) {
     .logo {
         max-width: 10ch;
     }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+      }
 }
