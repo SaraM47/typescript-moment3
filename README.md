@@ -1,59 +1,53 @@
-# Moment3
+# Moment3 -  Enhetskonvertering
+Denna responsiva webbplats är byggd med **Angular v19** med komponentbaserad struktur, routing, databindning och publicering.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+---
 
-## Development server
+## Innehåll
 
-To start a local development server, run:
+Webbplatsen innehåller följande undersidor:
 
-```bash
-ng serve
-```
+- Startsida (`/start`)  
+  En välkomstsida med bild, syfte och introduktion till webbplatsen.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Konverteringssida (`/converter`)  
+  En interaktiv sida där användaren kan:
+  - Konvertera mellan meter och feet
+  - Konvertera mellan celsius och fahrenheit
 
-## Code scaffolding
+- Om-sida (`/about`)  
+  En reflekterande sida som beskriver projektets genomförande, lärdomar och slutsatser.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Funktionalitet
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Responsiv design med media queries
+- Navigationsmeny byggd med Angulars router-modul (`routerLink`, `routerLinkActive`)
+- Tvåvägsdatabindning (`[(ngModel)]`) i konverteringskomponenterna
+- Användning av standalone-komponenter
+- Global styling i `styles.css` och komponentbaserad CSS
+- Publicering via webbhost (GitHub Pages, Netlify, Vercel eller liknande)
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Vad `partials/` innehåller
 
-To build the project run:
+Partials är återanvändbara komponenter som används på sidorna:
 
-```bash
-ng build
-```
+- `mainmenu/`: Navigationsmeny mellan sidorna.
+- `length-converter/`: Komponent för att konvertera mellan meter och feet.
+- `temperature-converter/`: Komponent för att konvertera mellan celsius och fahrenheit.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Dessa komponenter är standalone och importeras vid behov för att bygga upp sidorna.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Teknologier
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular 19 (standalone-komponenter)
+- TypeScript
+- CSS3 (responsiv design)
+- FormsModule (databindning i inputfält)
+- RouterModule (sidanavigation)
+- Git (versionshantering och publicering)
